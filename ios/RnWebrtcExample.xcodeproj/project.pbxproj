@@ -17,6 +17,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RnWebrtcExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RnWebrtcExampleTests.m */; };
+		5881373F23C06C7200282E8E /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5881373E23C06C7200282E8E /* WebRTC.framework */; };
 		6DEB75F80C10B6CBBAC88058 /* libPods-RnWebrtcExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EC67B85DE807C33DA27E3E /* libPods-RnWebrtcExampleTests.a */; };
 		75E9F8FDB54A4D7FE6EC62F2 /* libPods-RnWebrtcExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593D438D9C48D693DB626CFF /* libPods-RnWebrtcExample.a */; };
 		EA09BA61827B621202DB976E /* libPods-RnWebrtcExample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 460CDF30AA2CDDC847D00994 /* libPods-RnWebrtcExample-tvOS.a */; };
@@ -36,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "RnWebrtcExample-tvOS";
+		};
+		5881373C23C06C5600282E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5881373823C06C5600282E8E /* RCTWebRTC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35A2221F1CB493700015FD5C;
+			remoteInfo = RCTWebRTC;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +66,8 @@
 		4B100D5F20C22EA6C104A187 /* Pods-RnWebrtcExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnWebrtcExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RnWebrtcExample-tvOS/Pods-RnWebrtcExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		52FCFDDFC1BF24FABB337CEC /* Pods-RnWebrtcExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnWebrtcExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RnWebrtcExample-tvOS/Pods-RnWebrtcExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		581DBFC6155C2D4A11EA36DA /* Pods-RnWebrtcExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnWebrtcExampleTests.release.xcconfig"; path = "Target Support Files/Pods-RnWebrtcExampleTests/Pods-RnWebrtcExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5881373823C06C5600282E8E /* RCTWebRTC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebRTC.xcodeproj; path = "../node_modules/react-native-webrtc/ios/RCTWebRTC.xcodeproj"; sourceTree = "<group>"; };
+		5881373E23C06C7200282E8E /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../node_modules/react-native-webrtc/ios/WebRTC.framework"; sourceTree = "<group>"; };
 		593D438D9C48D693DB626CFF /* libPods-RnWebrtcExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnWebrtcExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBE1B06A34E57F2A1653F44 /* Pods-RnWebrtcExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnWebrtcExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RnWebrtcExample-tvOSTests/Pods-RnWebrtcExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77DCA9F3E425A7890DFBD059 /* Pods-RnWebrtcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnWebrtcExample.debug.xcconfig"; path = "Target Support Files/Pods-RnWebrtcExample/Pods-RnWebrtcExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E9F8FDB54A4D7FE6EC62F2 /* libPods-RnWebrtcExample.a in Frameworks */,
+				5881373F23C06C7200282E8E /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +160,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5881373923C06C5600282E8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5881373D23C06C5600282E8E /* libRCTWebRTC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				5881373823C06C5600282E8E /* RCTWebRTC.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -159,6 +179,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5881373E23C06C7200282E8E /* WebRTC.framework */,
 				13B07FAE1A68108700A75B9A /* RnWebrtcExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RnWebrtcExampleTests */,
@@ -194,7 +215,6 @@
 				BDDA0BB1139E1B51BDDCDA7B /* Pods-RnWebrtcExampleTests.debug.xcconfig */,
 				581DBFC6155C2D4A11EA36DA /* Pods-RnWebrtcExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -230,6 +250,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CF4A13297C4FBC9403326469 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,12 +329,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5881373923C06C5600282E8E /* Products */;
+					ProjectRef = 5881373823C06C5600282E8E /* RCTWebRTC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* RnWebrtcExample */,
@@ -323,6 +351,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5881373D23C06C5600282E8E /* libRCTWebRTC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebRTC.a;
+			remoteRef = 5881373C23C06C5600282E8E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -473,6 +511,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4A13297C4FBC9403326469 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RnWebrtcExample/Pods-RnWebrtcExample-frameworks.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-webrtc/ios/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnWebrtcExample/Pods-RnWebrtcExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
